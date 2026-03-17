@@ -1,6 +1,6 @@
 # Awesome Frontend Agent Skills
 
-**[English](README.md)**
+[English](./README.md) | 繁體中文
 
 > 收錄**含有 `SKILL.md` 檔案**的前端相關 Agent Skills 儲存庫。大部分可透過 `npx skills add` 安裝。
 >
@@ -139,6 +139,7 @@ npx skills add <owner/repo> --all
 | [supercent-io/skills-template](https://github.com/supercent-io/skills-template) | `frontend-design-system` — 前端設計系統建構指引 | `npx skills add supercent-io/skills-template --skill frontend-design-system` |
 | [github/awesome-copilot](https://github.com/github/awesome-copilot) | `web-design-reviewer` — 網頁設計審查與回饋 | `npx skills add github/awesome-copilot --skill web-design-reviewer` |
 | [kimny1143/claude-code-template](https://github.com/kimny1143/claude-code-template) | `ui-ux-pro-max` — UI/UX 設計最佳實踐 | `npx skills add kimny1143/claude-code-template --skill ui-ux-pro-max` |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | `frontend-design` — Anthropic 官方 frontend-design 強化版，內建排版、色彩、版面、動態的精選反模式，引導 AI 產出獨特、具生產品質的 UI | `npx skills add pbakaus/impeccable --skill frontend-design` |
 
 ---
 
